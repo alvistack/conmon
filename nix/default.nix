@@ -59,7 +59,7 @@ let
     doCheck = false;
     enableParallelBuilding = true;
     outputs = [ "out" ];
-    nativeBuildInputs = [ bash gitMinimal pcre pkg-config which ];
+    nativeBuildInputs = [ bash pcre pkg-config which ];
     buildInputs = [ glibc glibc.static glib ];
     prePatch = ''
       export CFLAGS='-static -pthread'
